@@ -1,0 +1,114 @@
+    1  ls
+    2  cd /bin/
+    3  ls
+    4  ls -l
+    5  ls -lt | head
+    6  date ; sleep ; date
+    7  man sleep
+    8  cd ~
+    9  ls
+   10  cd 
+   11  wget https://raw.githubusercontent.com/labbces/cen0336/master/files/sequences.nt.fa
+   12  ls
+   13  mkdir problemsets
+   14  cd problemsets/
+   15  wget https://raw.githubusercontent.com/labbces/cen0336/master/files/sequences.nt.fa
+   16  ls
+   17  cd ..
+   18  ls
+   19  rm -rf sequences.nt.fa 
+   20  ls
+   21  cd problemsets/
+   22  ls
+   23  wc -l sequences.nt.fa 
+   24  head -n 1
+   25  ls
+   26  cd problemsets/
+   27  ls
+   28  wc -l sequences.nt.fa 
+   29  wc
+   30  wc -c sequences.nt.fa 
+   31  head -n 1 sequences.nt.fa 
+   32  tail -n 3 sequences.nt.fa 
+   33  mv sequences.nt.fa > cancer_genes.fasta
+   34  ls
+   35  less cancer_genes.fasta 
+   36  rm- rf cancer_genes.fasta 
+   37  ls
+   38  less sequences.nt.fa 
+   39  wget https://raw.githubusercontent.com/labbces/cen0336/master/files/cuffdiff.txt
+   40  ls
+   41  less cancer_genes.fasta 
+   42  rm -rf cancer_genes.fasta 
+   43  ls
+   44  less cuffdiff.txt 
+   45  wget https://raw.githubusercontent.com/labbces/cen0336/master/files/cuffdiff.txt
+   46  ls
+   47  less cuffdiff.txt.1 
+   48  rm -rf cuffdiff.txt
+   49  ls
+   50  rm -rf cuffdiff.txt.1 
+   51  wget https://raw.githubusercontent.com/labbces/cen0336/master/files/cuffdiff.txt
+   52  ls
+   53  grep -c "^>" sequences.nt.fa 
+   54  grep -c ">" sequences.nt.fa 
+   55  grep ">" sequences.nt.fa |wc 
+   56  mv sequences.nt.fa cancer_genes.fasta
+   57  ls
+   58  history 
+   59  cd problemsets/
+   60  ls
+   61  man sort
+   62  ls -lt
+   63  ls -l
+   64  ls -lt | head
+   65  cd problemsets/
+   66  ls
+   67  grep ">" cancer_genes.fasta 
+   68  less cancer_genes.fasta 
+   69  head cancer_genes.fasta 
+   70  ls -l
+   71  grep ">" cancer_genes.fasta 
+   72  apropos remove
+   73  ls
+   74  cd problemsets/
+   75  ls
+   76  man wc
+   77  ls
+   78  grep '>' cancer_genes.fasta | wc
+   79  grep '>' cancer_genes.fasta | wc -l
+   80  grep '>' cancer_genes.fasta | wc
+   81  man grep
+   82  ls -lt
+   83  ls -l
+   84  cd problemsets/
+   85  ls
+   86  head cuffdiff.txt 
+   87  sort -k 10 -r -n cuffdiff.txt > sorte.cuttdiff.out
+   88  ls
+   89  sort -k 10 -r -n cuffdiff.txt > sorted.cuttdiff.out
+   90  ls
+   91  rm -rf sorte.cuttdiff.out 
+   92  ls
+   93  sort -k 10 -r -n cuffdiff.txt | head -n 100 > top100.sorted.cuffdiff.out
+   94  ls
+   95  sort -k 10 -r -n cuffdiff.txt | head -n 100 | cut -f 1
+   96  cd problemsets/
+   97  ls
+   98  sort -k 10 -r -n cuffdiff.txt | head -n 100 | cut -f 1 > differentially.expressed.genes.txt
+   99  ls
+  100  cd problemsets/
+  101  ls
+  102  vi git_exercises.txt
+  103  cd problemsets/
+  104  ls
+  105  vi git_exercises.txt
+  106  cd problemsets/
+  107  ls
+  108  git status
+  109  git add cuffdiff.txt differentially.expressed.genes.txt sorted.cuttdiff.out top100.sorted.cuffdiff.out 
+  110  git status
+  111  ls
+  112  git commit -m "add new files"
+  113  git push
+  114  history > history.txt
